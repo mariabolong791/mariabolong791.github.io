@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighting Loft Ltd | Architectural & Luxury Lighting London</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; }
+        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        
+        .hero-lighting {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), 
+                        url('https://images.unsplash.com/photo-1540932239986-30128078f3c5?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+            border-color: #f59e0b;
+        }
+
+        .text-amber-glow {
+            color: #f59e0b;
+            text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+        }
+    </style>
+</head>
+<body class="text-stone-300 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-lightbulb text-2xl text-amber-500"></i>
+                <div class="leading-none">
+                    <span class="text-xl font-serif font-bold tracking-widest text-white block uppercase">Lighting Loft</span>
+                    <span class="text-[9px] uppercase tracking-[0.4em] font-bold text-stone-500">London Limited</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-widest text-stone-400">
+                <a href="#home" class="hover:text-amber-500 transition">Collections</a>
+                <a href="#about" class="hover:text-amber-500 transition">Our Studio</a>
+                <a href="#services" class="hover:text-amber-500 transition">Wholesale</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Contact</a>
+            </div>
+            <button class="border border-amber-500/50 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-amber-500 hover:bg-amber-500 hover:text-black transition duration-500">
+                Request Catalog
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-lighting h-screen flex items-center px-6">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl">
+                <h2 class="text-amber-500 font-bold tracking-[0.5em] uppercase text-xs mb-6">Exquisite Illumination Systems</h2>
+                <h1 class="text-6xl md:text-8xl font-serif font-bold text-white mb-8 leading-tight">
+                    Menerangi <br><span class="italic text-amber- glow font-normal">Ruang & Ambisi.</span>
+                </h1>
+                <p class="text-lg text-stone-400 mb-12 leading-relaxed max-w-xl font-light">
+                    Lighting Loft Ltd menghadirkan kurasi pencahayaan elektronik premium untuk proyek arsitektural dan komersial dari jantung Canary Wharf, London.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <a href="#services" class="bg-amber-500 text-black px-12 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-white transition duration-500 text-center">
+                        View Collections
+                    </a>
+                    <a href="#contact" class="border border-stone-600 text-white px-12 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-amber-500 hover:border-amber-500 hover:text-black transition duration-500 text-center">
+                        Wholesale Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Showcase Section -->
+    <section id="services" class="py-32 px-6 bg-[#050505]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-10 border border-stone-900 bg-black glow-hover transition duration-500">
+                    <i class="fas fa-city text-3xl text-amber-500/50 mb-8"></i>
+                    <h4 class="text-xl font-serif text-white mb-4 uppercase tracking-widest">Architectural</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Sistem pencahayaan terintegrasi untuk gedung komersial dan fasad modern dengan teknologi LED mutakhir.</p>
+                </div>
+                <div class="p-10 border border-stone-900 bg-black glow-hover transition duration-500">
+                    <i class="fas fa-couch text-3xl text-amber-500/50 mb-8"></i>
+                    <h4 class="text-xl font-serif text-white mb-4 uppercase tracking-widest">Luxury Residential</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Kurasi lampu hias dan sistem *smart-lighting* untuk hunian eksklusif yang mengutamakan estetika.</p>
+                </div>
+                <div class="p-10 border border-stone-900 bg-black glow-hover transition duration-500">
+                    <i class="fas fa-boxes text-3xl text-amber-500/50 mb-8"></i>
+                    <h4 class="text-xl font-serif text-white mb-4 uppercase tracking-widest">Wholesale Supply</h4>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Distribusi peralatan elektronik dan komponen pencahayaan dalam skala besar untuk kontraktor dan desainer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-serif font-bold text-white mb-8 uppercase tracking-widest">London's Light <br><span class="text-amber-500">Innovators</span></h3>
+                <p class="text-stone-500 mb-8 leading-relaxed font-light text-lg">Berbasis di Tiller Road, London E14, Lighting Loft Ltd beroperasi di persimpangan antara desain seni dan teknik elektronik. Sebagai grosir spesialis (SIC 46520), kami memastikan setiap komponen yang kami suplai memiliki efisiensi energi tertinggi.</p>
+                <div class="flex gap-10">
+                    <div class="border-l border-amber-500 pl-6">
+                        <p class="text-white font-bold text-2xl tracking-tighter">SIC 46520</p>
+                        <p class="text-stone-600 text-[10px] uppercase tracking-widest font-bold">Industry Code</p>
+                    </div>
+                    <div class="border-l border-amber-500 pl-6">
+                        <p class="text-white font-bold text-2xl tracking-tighter">E14 8PX</p>
+                        <p class="text-stone-600 text-[10px] uppercase tracking-widest font-bold">Canary Wharf District</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?q=80&w=2070&auto=format&fit=crop" alt="Modern Lighting Design" class="rounded shadow-2xl opacity-80">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 bg-stone-900/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif font-bold text-white mb-8 uppercase tracking-[0.2em]">Partner With Us</h2>
+            <p class="text-stone-500 mb-16 font-light">Hubungi studio kami di London untuk konsultasi proyek atau daftar harga grosir.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-20">
+                <div class="bg-black p-8 border border-stone-800">
+                    <p class="text-amber-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Official Address</p>
+                    <p class="text-white font-light leading-relaxed">14/2, 10-16 Tiller Road<br>London, E14 8PX<br>United Kingdom</p>
+                </div>
+                <div class="bg-black p-8 border border-stone-800 flex flex-col justify-center">
+                    <p class="text-amber-500 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">Inquiry</p>
+                    <p class="text-white font-light">sales@lightingloft.co.uk</p>
+                    <p class="text-stone-600 text-xs mt-2">Mon - Fri: 09:00 - 18:00 GMT</p>
+                </div>
+            </div>
+            
+            <button class="bg-white text-black px-16 py-5 text-xs font-bold uppercase tracking-[0.4em] hover:bg-amber-500 transition duration-500">
+                Contact Our Specialists
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-stone-900 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-center gap-3 mb-6 opacity-50">
+                <i class="fas fa-lightbulb text-amber-500"></i>
+                <span class="text-xs font-serif tracking-[0.5em] text-white uppercase">Lighting Loft Ltd</span>
+            </div>
+            <p class="text-[9px] text-stone-700 uppercase tracking-[0.3em] font-bold mb-4">Wholesale of electronic and telecommunications equipment</p>
+            <p class="text-[10px] text-stone-600">&copy; 2026 Lighting Loft Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
